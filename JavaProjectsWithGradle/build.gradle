@@ -1,0 +1,25 @@
+//https://spring.io/guides/gs/gradle/
+
+apply plugin: 'java'
+
+jar {
+    baseName = 'JavaProjectWithGradle'
+    version =  '0.1.0'
+    manifest {
+        attributes("Implementation-Title": "Gradle",
+                   "Implementation-Version": version,
+                   "Main-Class": "com.jamesrosko.spring.HelloWorld")
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile "joda-time:joda-time:2.2"
+}
+
