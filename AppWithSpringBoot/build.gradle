@@ -24,6 +24,8 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+
+
 dependencies {
     // tag::jetty[]
     compile("org.springframework.boot:spring-boot-starter-web") {
@@ -35,6 +37,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-actuator")
     // end::actuator[]
     testCompile("junit:junit")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
     
     compile "joda-time:joda-time:2.2"
 }
