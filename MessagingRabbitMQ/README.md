@@ -8,3 +8,6 @@ http://www.rabbitmq.com/download.html
 Run
 > ./gradlew bootRun
 
+Uninstall
+> sudo apt-get remove rabbitmq-server 
+
