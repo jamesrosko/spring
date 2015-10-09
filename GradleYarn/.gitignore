@@ -1,0 +1,12 @@
+/bin/
+/build/
+.gradle
+/container/bin/
+/container/build/
+/container/.gradle
+/client/bin/
+/client/build/
+/client/.gradle
+/appmaster/bin/
+/appmaster/build/
+/appmaster/.gradle
