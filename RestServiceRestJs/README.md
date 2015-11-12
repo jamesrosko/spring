@@ -14,4 +14,9 @@ JSON
 
 
 
+Install
+> bower install --save rest
+> bower install --save curl
+
+
 
