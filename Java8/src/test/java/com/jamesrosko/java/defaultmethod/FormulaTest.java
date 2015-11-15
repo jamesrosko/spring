@@ -13,7 +13,10 @@ public class FormulaTest {
       return sqrt(a * 100);
     }
   };
-
+  @Test
+  public void test2() {
+  }
+  
   @Test
   public void test() {
     assertThat(formula.calculate(100), equalTo(100.0));
