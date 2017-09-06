@@ -3,14 +3,13 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.5.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.6.RELEASE")
     }
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 
 jar {
     baseName = 'gs-consuming-rest'
@@ -28,10 +27,6 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter")
     compile("org.springframework:spring-web")
     compile("com.fasterxml.jackson.core:jackson-databind")
-    compile("org.projectlombok:lombok:1.16.2")
     testCompile("junit:junit")
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.3'
-}

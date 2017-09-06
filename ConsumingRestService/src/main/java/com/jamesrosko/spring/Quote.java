@@ -1,9 +1,7 @@
 package com.jamesrosko.spring;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.Data;
 
-@Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Quote {
 
@@ -24,6 +22,10 @@ public class Quote {
 
   public void setValue(Value value) {
     this.value = value;
+  }
+
+  public String toString() {
+    return String.format("type:%s, id:%s, quote:%s", type, value.getId(), value.getQuote());
   }
 
 }
